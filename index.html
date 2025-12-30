@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Esranur Apaydın</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #df4040, #8a0808);
+            font-family: Arial, sans-serif;
+            color: #f1e8e8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        a {
+            color: #ffdada;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+
+        .card {
+            background-color: #031c31;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(221, 73, 73, 0.9);
+        }
+
+        img {
+            max-width: 200px;
+            border-radius: 8px;
+            display: block;
+            margin-left: 20px; 
+            border: 3px solid #094161;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #f1e8e8;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        button {
+            background-color: #c43737;
+            color: #e8edf1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #bb4040;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            table, img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Ben Kimim</h2>
+        <p>
+            Merhaba! Ben Esranur Apaydın. Sunucu tarafı mimarileri, veritabanı yönetimi
+            ve API geliştirme konularında çalışan bir Backend Geliştiricisiyim.
+            Ölçeklenebilir ve performanslı sistemler geliştirmeyi seviyorum.
+        </p>
+        <img src="benim.png" alt="Esranur Apaydın">
+    </div>
+
+    <div class="card">
+        <h2>Eğitim</h2>
+        <table>
+            <tr>
+                <th>Yıl</th>
+                <th>Bölüm</th>
+                <th>Okul</th>
+            </tr>
+            <tr>
+                <td>2021-2023</td>
+                <td>Bilgisayar Programcılığı</td>
+                <td>Esenyurt Üniversitesi</td>
+            </tr>
+            <tr>
+                <td>2025-2027</td>
+                <td>Web Geliştirme</td>
+                <td>Anadolu Üniversitesi</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Çalışma Hayatım</h2>
+        <p>
+            Mezuniyet sonrası farklı sektörlerde deneyim kazandım.
+            Şu anda Erpa Teknoloji bünyesinde kariyerime devam ediyorum.
+        </p>
+        <table>
+            <tr>
+                <th>Yıl</th>
+                <th>Şirket</th>
+                <th>Görev</th>
+            </tr>
+            <tr>
+                <td>2023-2024</td>
+                <td>Emko Eğitim Çözümleri</td>
+                <td>İdari İşler</td>
+            </tr>
+            <tr>
+                <td>2025-</td>
+                <td>Erpa Teknoloji</td>
+                <td>Web Geliştirme</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>İlgi Alanlarım</h2>
+        <p>
+            Gezmek, müzik dinlemek, kod yazmak, kitap okumak ve spor yapmak
+            hem motivasyonumu hem de yaratıcılığımı artırıyor.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Sosyal Medya</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Sertifikalar & CV</h2>
+        <button onclick="window.open('cv.pdf', '_blank')">CV / Sertifikalar</button>
+        <button onclick="document.getElementById('iletisim').scrollIntoView({behavior:'smooth'})">
+            İletişime Git
+        </button>
+    </div>
+
+    <div class="card" id="iletisim">
+        <h2>İletişim</h2>
+<div class="card" id="iletisim">
+    
+
+    <p>
+        Benimle aşağıdaki iletişim bilgilerinden ulaşabilirsiniz:
+    </p>
+
+    <p>
+        📧 <strong>E-posta:</strong>
+        <a href="mailto:esranurapaydin23@gmail.com">esranuapaydin23@gmail.com</a>
+    </p>
+
+    <p>
+        📞 <strong>Telefon:</strong>
+        <a href="tel:+905015528172">+90 501 552 81 72</a>
+    </p>
+</div>
+
+    </div>
+
+</body>
+</html>
